@@ -4,6 +4,7 @@
  * There are however some use cases and can ease the development of prototypes
  * It solves two problems at once which can be bad (global access and single instance)
  * It can also be used as a base class for other classes
+ * This example is not thread safe, 
 */
 
 public class SingletonPattern {
@@ -19,9 +20,10 @@ public class SingletonPattern {
     }
 
     public void DoSomething() {
-        UnityEngine.Debug.Log("Doing Something.");
+        UnityEngine.Debug.Log("Doing something.");
     }
 
     public void DoAnotherThing() {
+        UnityEngine.Debug.Log("Doing another thing.");
     }
 }
