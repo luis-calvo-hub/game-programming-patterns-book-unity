@@ -26,6 +26,10 @@ public class Singleton {
         }
     }
 
+    // Notice the private constructor, this prevents other classes from creating new instances
+    private Singleton() {
+    }
+
     public void DoSomething() {
         UnityEngine.Debug.Log("Doing something...");
     }
